@@ -1,7 +1,4 @@
-import { Inter } from 'next/font/google'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create.xyz App',
@@ -16,8 +13,12 @@ export default function RootLayout({ children }) {
           href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'
           rel='stylesheet'
         />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'
+          rel='stylesheet'
+        />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
